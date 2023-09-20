@@ -1,0 +1,147 @@
+:root{
+    --couleurFond: #F9F9F9;
+    --couleurLien: #3F55AF;
+    --couleurLienHover: #32438A;
+    --couleurHeaderRight: #D9EDF7;
+    --couleurHeader:#222222;
+    --couleurTitre: #777777;
+    --couleurTitreHover: #f8fcff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    width: 100%;
+    height: 10vh;
+    border: 1px solid black;
+    background-color: var(--couleurHeader);
+    opacity: 1;
+    padding: 0 5%;   
+}
+
+/* .icone-logo{
+    /* color: var(--couleurTitre); 
+    font-size: 20px;
+    margin-right: 10px;
+} */
+
+.element-menu:hover{
+    color: var(--couleurTitreHover) !important;
+} 
+
+.panier-cache{
+    height: 10vh;
+    margin-top: -1.4%;
+}
+
+footer h5{
+    font-size: 30px;
+}
+
+footer {
+    width: 100%;
+    background-color: #f5f8fa;
+    border-top: 4px solid #e5e9ee;
+    /* margin-top: 200px; */
+    box-sizing: border-box;
+}
+
+hr {
+    border: 1px solid #eeeeee;
+}
+
+footer input::placeholder{
+    color: #ada7ae !important;
+    font-size: 18px;
+}
+
+footer .btn-newsletter {
+    background-color: #32438A;
+    color: white;
+}
+
+
+.container-reduction{
+    background-color: var(--couleurFond);
+    padding: 0 90px;
+}
+
+.titre-reduction{
+    color: #28384D;
+}
+
+.titre-reduction .reduction{
+    font-size: 39px;
+}
+
+
+
+.reduction-principal {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    gap: 30px;
+    /* padding: 0 90px; */
+}
+
+
+/* Partie reduction left  */
+
+
+.section-reduction-left img{
+    width: 100%;
+}
+
+.section-reduction-left .card-header{
+    background-color: #3F55AF;
+    color: white;
+}
+
+.section-reduction-left .card {
+    border: 1px solid #3F55AF;
+}
+
+/* Fin reduction left  */
+
+
+/* Section .reduction right  */
+
+.section-reduction-right .card{
+    border: 1px solid var(--couleurHeaderRight);
+}
+
+.section-reduction-right .card .card-header {
+    background-color: var(--couleurHeaderRight);
+    color: #3170AA;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Toutes nos formations */
+.section-reduction-right img {
+    width: 30px;
+    height: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--couleurLien);
+}
+
+a:hover{
+    text-decoration: underline var(--couleurLienHover);
+    color: var(--couleurLienHover);
+}
+
+/* Fin toutes nos formations */
+
+p, #text {
+    color: #515753;
+
+}
+
+/* Fin usage personnel */

@@ -1,0 +1,177 @@
+:root{
+    --couleurFond: #F9F9F9;
+    --couleurbtn: #3F55AF;
+    --couleurbtnHover: #32438A;
+    --couleurFormationDispo: #44A8B3;
+    --couleurHeader:#222222;
+    --couleurTitre: #777777;
+    --couleurTitreHover: #f8fcff;
+}
+
+:root{
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    border: 1px solid black;
+    background-color: var(--couleurHeader);
+    opacity: 1;
+    padding: 0 5%;   
+}
+
+/* .icone-logo{
+    /* color: var(--couleurTitre); 
+    font-size: 20px;
+    margin-right: 10px;
+} */
+
+.element-menu:hover{
+    color: var(--couleurTitreHover) !important;
+} 
+
+.panier-cache{
+    height: 10vh;
+    margin-top: -1.4%;
+}
+
+footer h5{
+    font-size: 30px;
+}
+
+footer {
+    width: 100%;
+    background-color: #f5f8fa;
+    border-top: 4px solid #e5e9ee;
+    /* margin-top: 200px; */
+    box-sizing: border-box;
+}
+
+hr {
+    border: 1px solid #eeeeee;
+}
+
+footer input::placeholder{
+    color: #ada7ae !important;
+    font-size: 18px;
+}
+
+footer .btn-newsletter {
+    background-color: #32438A;
+    color: white;
+}
+
+
+.principalContainer{
+    display: grid;
+    grid-template-rows: 10%, 65%, 25%;
+    gap: 30px;
+}
+
+.baniere{
+    background-image: url(images/banniere.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+    height: 50vh;
+    color: white;
+}
+
+h1{
+    font-size: 65px;
+}
+
+.baniere .btn-choix-formation{
+    color: white;
+    background-color: var(--couleurbtn);
+}
+
+.baniere .btn-choix-formation:hover{
+    background-color: var(--couleurbtnHover);
+}
+
+/* Formations  */
+.formations{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 2% 5%;
+}
+
+.element-formation{
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    /* width: 25rem;  */
+    height: 36rem;
+}
+
+.element-formation img{
+    width: 120px;
+    height: 120px;
+}
+
+
+
+.element-formation button {
+    background-color: var(--couleurbtn);
+    color: white;
+}
+
+.element-formation button:hover{
+    background-color: var(--couleurbtnHover);
+    color: white;
+}
+
+.element-formation a{
+    color: var(--couleurbtn);
+    text-decoration: none;
+}
+
+.element-formation a:hover{
+    color: var(--couleurbtnHover); 
+    text-decoration: underline var(--couleurbtnHover);
+}
+
+.element-formation .formation-dispo{
+    color: white;
+    background-color: var(--couleurFormationDispo);
+    padding: 0 7px; 
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 5px;
+    display: inline-block;
+    justify-content: center;
+}
+
+/* Temoignages */
+.temoignages{
+    padding: 2% 5%;
+}
+.row {
+    display: flex;
+    margin-top: 9px;
+    margin-right: 9px;
+    margin-left: 9px;
+}
+ 
+/* .btn-plus-temoignages{
+    background-color: blue;
+} */
+
+.temoignages button {
+    border: 1px solid var(--couleurbtn);
+    background-color: white;
+    color: #428bca;
+}
+
+.temoignages button:hover{
+    background-color: var(--couleurbtnHover);
+    color: white;
+}
