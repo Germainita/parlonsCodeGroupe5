@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h5 {
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 700;
+    margin-top: 25px;
+    line-height: 29px;
+
+}
+.cercle{
+    border-right: 1px solid black;
+    width: 100%;
+    margin-top: -40px;
+    padding-right: 2%;
+}
+.bloc{
+    display: flex;
+    margin-left: -120px;
+}
+.right{
+        min-height: 20px;
+        width: 700px;
+        height: 300px;
+        padding: 19px;
+        margin-bottom: 20px;
+        background-color: #f5f5f5;
+        border: 1px solid #e3e3e3;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    
+}
+h4{
+    color: #8c8c8c;
+    text-align: center;
+    padding: 50px 0;
+}
+.right a{
+    margin-left:  70px;
+}
+.left a{
+    text-decoration: none;
+    color: black;
+}
+#retour{
+    width: 410px;
+    height: 50px;
+    margin-left: -60px;
+}
+#allerpanier{
+    width: 300px;
+    height: 50px;
+    margin-right: -170px;
+}
+#retour i {
+    padding-top: 8px;
+    font-size: 32px;
+}
+#connexion{
+    text-align: center;
+    padding-top: 8px;
+    width: 450px;
+}
+
+#connexion a {
+    text-decoration: none;
+}
+#connexion a:hover{
+    color: white ;
+}
+#allerpanier{
+    text-align: center;
+    padding-top: 8px; 
+    width: 450px;
+    background-color:#4A90E2  ;
+}
+#allerpanier a{
+    text-decoration: none;
+    color: white ;
+}
+#masterclass{
+    margin-top: -24px;
+}
+.right p a{
+    text-decoration: none;
+    margin: 0;
+}
+.right p{
+    margin-left: 20px;
+    color: #8C8C8C;
+}
