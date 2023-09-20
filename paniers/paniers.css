@@ -1,0 +1,113 @@
+
+.bloc{
+    display: flex;
+    
+}
+.card-header{
+    background-color: #3F55AF;
+}
+h2{
+    text-align: center;
+    color: #28384d ;
+    margin-top: 4%;
+}
+#python{
+    width: 8%;
+    height:8%;
+    border: 1px solid red;
+}
+.titre p{
+    margin-left: 2%;
+}
+.total{
+    background-color: #F5F5F5;
+    margin-top: -15px;
+    height: 75px;
+    border: 2px solid #F5F5F5 ;
+    color:#3F55AF;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-left: 80%;
+}
+.bouton{
+    margin-bottom: 1.5%;
+    height: 35px;
+    float: right;
+    padding-left: 45%;
+}
+.marchand{
+    background-color: #6B9DBB;
+    border: none;
+    height: 35px;
+    margin-left: 1%;
+}
+.marchand a{
+    text-decoration: none;
+    color: white;
+}
+.paie{
+    background-color: #36858E;
+    border: none;
+    height: 35px;
+    margin-right: 1%;
+}
+.paie a{
+    text-decoration: none;
+    color: white;
+} 
+.card-body{
+    border: 1px solid #E6E5E5;
+    
+}
+.reduction{
+    background-color: #D9EDF7;
+    height: 15%;
+    border-top-left-radius: 1% ;
+    color: #31708f; 
+    padding-top: 5px;
+    padding-left: 5%;
+    padding-bottom: 5px;
+}
+.reduction p{
+    text-align: justify;
+}
+.left{
+    margin-right: 20px;
+}
+.card{
+    margin-bottom: 10px;
+    border: 1px solid #3F55AF;
+    
+}
+/* Toutes nos formations */
+.card-text a img {
+    width: 30px;
+    height: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--couleurLien);
+}
+
+a:hover{
+    text-decoration: underline var(--couleurLienHover);
+    color: var(--couleurLienHover);
+}
+
+/* Fin toutes nos formations */
+.formation{
+    background-color: #D9EDF7;
+    height: 15%;
+    border-top-left-radius: 1% ;
+    color: #31708f; 
+    padding-top: 10px;
+}
+.form2{
+    border: 1px solid #D9EDF7;
+}
+.right .card{
+    border: 1px solid #D9EDF7;
+
+}

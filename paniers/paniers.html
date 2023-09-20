@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="paniers.css">
+</head>
+<body>
+    <div class="container">
+        <h2><i class="fa-solid fa-cart-shopping" style="color: #28384d;"></i>&nbsp; Votre Panier</h2>
+        <hr>
+        <div class="bloc ">
+
+            <div class="left">
+                <div class="card  ">
+                    <div class="card-header text-white ">
+                        <span><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>&nbsp; Contenu actuel de votre panier </span>  
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Formations</th>
+                                <th scope="col">Quantité</th>
+                                <th scope="col">Prix (USD)</th>
+                                <th scope="col">Total (USD)</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                    <div class="titre">
+                                        <div class="image d-flex">
+                                            <img src="https://parlonscode.com/icons/courses/python.svg" alt="icone-phyton" id="python">
+                                            <p><a href="#">MasterClass python</a></p> </div>
+                                            <p class=" px-5 text-secondary acces">Accès à vie</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <form class="row g-2 pt-3">
+                                        <div class="dropup-center dropup col-5 ">
+                                          <select  class="form-select increment text-secondary" aria-label="Selection multiple">
+                                            <option value="" selected>1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                          </select>
+                                        </div>
+                                        <div class="col-4">
+                                          <button type="submit" class="btn border mb-3 ms-4 text-secondary">Modifier</button>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td class="text-secondary pt-4">$99.00 </td>
+                                <td class="text-secondary pt-4">
+                                    <span>$99.00</span>
+                                    <span class="bg-white border py-1 px-2 rounded-1"><i class="fa-solid fa-xmark"></i></span>
+                                </td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                          <p class="total">Sous-total: $89.00
+                        </p>
+                    </div>
+                    <div class="bouton">
+                        <button type="button " class="btn btn-primary marchand"><a href="#" ><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> CONTINUER A MAGASINER</a></button>
+                        <button type="button " class="btn btn-primary paie"><a href="#"><i class="fa-regular fa-credit-card" style="color: #ffffff;"></i> PAYER MAINTENANT</a></button>
+                        
+                    </div>
+                  </div>
+                 
+                  <div class="faq">
+                    <div class="card ">
+                            <div class="card-header text-white ">
+                             Foire aux questions
+                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title fs-5">Puis je payer avec Paypal?</h5>
+                            <p class="card-text ">Bien sûr! Le processus n'est pas encore automatisé, mais la manière la plus simple est de nous faire parvenir le montant total de votre commande via notre <a href="#">URL PayPal.me</a> . Veuillez inclure votre adresse e-mail dans la section «instructions spéciales». Nous nous chargerons de vous créer un compte et nous
+                               vous enverrons un lien d'accès à l'adresse email qui aura été indiquée.</p>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fs-5">Puis je payer avec Wester Union ou moneyGram?</h5>
+                            <p class="card-text ">Bien sûr! Le processus n'est pas automatisé, mais la manière la plus simple est de nous faire parvenir le montant total de votre commande via Western Union ou MoneyGram. Veuillez nous contacter via  <a href="#">page de contact</a> la  pour plus d'informations concernant les détails pour le transfert. Une fois le paiement confirmé, nous nous chargerons de vous créer un compte et nous
+                               vous enverrons un lien d'accès à l'adresse email qui aura été indiquée.</p>
+                        </div>
+                      </div>
+                  </div>
+    
+            </div>
+            <div class="right">
+                <div class="card  ">
+                    <div class=" reduction"; >
+                        <span><i class="fa-solid fa-star" style="color: #31708f;"></i>&nbsp; Gagner 20% de réduction </span>
+                    </div>
+                    <p class="px-3">Achetez plus d'une formation et vous obtiendrez automatiquement 
+                        un rabais combiné de 20% sur les cours supplémentaires.</p>
+                </div>
+                <!-- Toutes nos formations  -->
+                <div class="card mb-4 forma2">
+                    <h5 class="card-header formation">Toutes nos formations</h5>
+                    <div class="card-body">
+                        <!-- Cours 1  -->
+                        <p class="card-text d-flex">
+                            <a href="#"><img src="https://parlonscode.com/icons/courses/java-swing.svg" alt="icone-swing"></a>
+                            <a href="#" class="ms-2 fs-5">Devenez  Swage avec Swing</a>
+                        </p>
+
+                        <!-- Cours 2  -->
+                        <p class="card-text d-flex">
+                            <a href="#"><img src="https://parlonscode.com/icons/courses/symfony-framework.svg" alt="icone-symfony"></a>
+                            <a href="#" class="ms-2 fs-5">Devenez un pro Symfony 3/4</a>
+                        </p>
+
+                        <!-- Cours 3  -->
+                        <p class="card-text d-flex">
+                            <a href="#"><img src="https://parlonscode.com/icons/courses/symfony-framework.svg" alt="icone-symfony"></a>
+                            <a href="#" class="ms-2 fs-5">Symfony 4 en une semaine!</a>
+                        </p>
+
+                        <!-- Cours 4  -->
+                        <p class="card-text d-flex">
+                            <a href="#"><img src="https://parlonscode.com/icons/courses/symfony-framework.svg" alt="icone-symfony"></a>
+                            <a href="#" class="ms-2 fs-5">Symfony 5 en une semaine!</a>
+                        </p>
+
+                        <!-- Cours 5  -->
+                        <p class="card-text d-flex">
+                            <a href="#"><img src="https://parlonscode.com/icons/courses/python.svg" alt="icone-phyton"></a>
+                            <a href="#" class="ms-2 fs-5">MasterClass Pyton</a>
+                        </p>
+
+                        <!-- Cours 6 -->
+                        <p class="card-text d-flex">
+                            <a href="#"><img src="https://parlonscode.com/icons/courses/symfony-framework.svg" alt="icone-symfony"></a>
+                            <a href="#" class="ms-2 fs-5">Devenez un pro Symfony</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- Fin toutes nos formations  -->
+                <div class="card  ">
+                    <div class=" reduction"; >
+                        <span><i class="fa-solid fa-star" style="color: #31708f;"></i>&nbsp;  Réductions</span>
+                    </div>
+                    <p class="px-3"> <a href="#" class="text-decoration-none text-primary">3 manières d'économiser:</a> Nous avons des réductions combinées, des réductions académiques, et des réductions pour les équipes..</p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
