@@ -1,0 +1,100 @@
+:root{
+    --couleurFond: #F9F9F9;
+    --couleurLien: #3F55AF;
+    --couleurLienHover: #32438A;
+    --couleurHeaderRight: #D9EDF7;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-paiement{
+    background-color: var(--couleurFond);
+    padding: 0 90px;
+}
+
+.titre-paiement{
+    color: #28384D;
+}
+
+.titre-paiement .paiement{
+    font-size: 39px;
+}
+
+
+.personne-bold {
+    font-weight: bold;
+}
+
+
+
+/* Partie paiement left  */
+.section-paiement-left .card-header{
+    background-color: #3F55AF;
+    color: white;
+}
+
+.section-paiement-left .card {
+    border: 1px solid #3F55AF;
+}
+
+.btn-paiement{
+    color: white;
+    background-color: #44a8b3;
+    border-color: #3d97a1;
+}
+
+.btn-paiement:hover{
+    background-color: #36858E;
+    color: white;
+}
+/* Fin paiement left  */
+
+
+/* Partie right  */
+.section-paiement-right .card{
+    border: 1px solid var(--couleurHeaderRight);
+}
+
+.section-paiement-right .card .card-header {
+    background-color: var(--couleurHeaderRight);
+    color: #3170AA;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Toutes nos formations */
+.section-paiement-right img {
+    width: 30px;
+    height: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--couleurLien);
+}
+
+a:hover{
+    text-decoration: underline var(--couleurLienHover);
+    color: var(--couleurLienHover);
+}
+
+/* Fin toutes nos formations */
+
+
+
+p, #text, label {
+    color: #515753;
+
+}
+
+label{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Fin usage personnel */

@@ -1,0 +1,84 @@
+:root{
+    --couleurFond: #F9F9F9;
+    --couleurLien: #3F55AF;
+    --couleurLienHover: #32438A;
+    --couleurHeaderRight: #D9EDF7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-reduction{
+    background-color: var(--couleurFond);
+    padding: 0 90px;
+}
+
+.titre-reduction{
+    color: #28384D;
+}
+
+.titre-reduction .reduction{
+    font-size: 39px;
+}
+
+
+
+/* Partie reduction left  */
+
+
+.section-reduction-left img{
+    width: 100%;
+}
+
+.section-reduction-left .card-header{
+    background-color: #3F55AF;
+    color: white;
+}
+
+.section-reduction-left .card {
+    border: 1px solid #3F55AF;
+}
+
+/* Fin reduction left  */
+
+
+/* Section .reduction right  */
+
+.section-reduction-right .card{
+    border: 1px solid var(--couleurHeaderRight);
+}
+
+.section-reduction-right .card .card-header {
+    background-color: var(--couleurHeaderRight);
+    color: #3170AA;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Toutes nos formations */
+.section-reduction-right img {
+    width: 30px;
+    height: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--couleurLien);
+}
+
+a:hover{
+    text-decoration: underline var(--couleurLienHover);
+    color: var(--couleurLienHover);
+}
+
+/* Fin toutes nos formations */
+
+p, #text {
+    color: #515753;
+
+}
+
+/* Fin usage personnel */
