@@ -1,0 +1,33 @@
+:root{
+    --couleurHeader:#222222;
+    --couleurTitre: #777777;
+    --couleurTitreHover: #f8fcff;
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    /* width: 202vh; */
+}
+
+main {
+    margin-top: 75px;
+}
+main hr{
+    border: 1px solid #eeeeee;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+main .zone-audio{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 35px;
+}
+main .zone-audio h4{
+    padding-bottom: 3px;
+}
+/*  */

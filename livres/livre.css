@@ -1,0 +1,58 @@
+body{
+    background-color: #F9F9F9;
+}
+.titre{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 90%; */
+}
+p{
+    text-align: center;
+}
+.fa-book{
+    /* transform: rotate(-40deg);  */
+    font-size: 39px;
+    content: "\f02d"
+  }
+.livre1{
+    display: flex;
+    margin: 100px;
+}
+.livre2{
+    display: flex;
+    margin: 100px;
+}
+.livre3{
+    display: flex;
+    margin: 100px;
+}
+.contenuL1{
+    text-align: justify;
+    margin-right: 90Px;
+}
+.contenuL2{
+    text-align: justify;
+    margin-left: 90Px;
+}
+.contenuL3{
+    text-align: justify;
+    margin-right: 90Px;
+}
+.contenuL1 p{
+    text-align: justify;
+    
+}
+.contenuL2 p{
+    text-align: justify;
+    
+}
+.contenuL3 p{
+    text-align: justify;
+    
+}
+.contenuL2 p .label {
+    background-color: #eab108;
+}
+.contenuL1 p .label {
+    background-color: #eab108;
+}

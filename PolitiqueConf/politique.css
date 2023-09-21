@@ -1,0 +1,23 @@
+
+.titre {
+    display: flex;
+    justify-content: center;
+}
+
+
+.fa.fa-lock {
+    font-size: 39px; 
+    /* margin-bottom: 50px; */
+  }
+  
+.contenu{
+    text-align: center; 
+    /* margin-left: 0 25px; */
+}
+.contenu p{
+    /* text-align: justify; */
+    text-align: justify;
+    margin: 0 400px;
+    font-size: 19px;
+    line-height: 1.9;
+}

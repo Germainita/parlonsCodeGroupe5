@@ -6,26 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="../header-footer/header-footer.css"> -->
+    <link rel="stylesheet" href="../header-footer/header-footer.css">
     <link rel="stylesheet" href="style-reduction.css">
     <title>Reduction</title>
 </head>
 <body>
     <!-- Debut header  -->
-    <header class="d-flex flex-wrap justify-content-center py-2 fixed-top">
-        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <span class="icone-logo text-secondary element-menu"></span>
-          <span class="fs-4 text-secondary element-menu"><i class="fa-solid fa-code-branch"></i>&nbsp;Parlons Code</span>
-        </a>
-  
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link text-secondary element-menu fs-5">Formations</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-secondary element-menu fs-5">Ateliers</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-secondary element-menu fs-5">Podcasts</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-secondary element-menu fs-5">Livres</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-secondary element-menu fs-5">Se connecter</a></li>
-          <li class="nav-item panier-cache bg-black d-block"><a href="#" class="nav-link fs-5 text-success py-3"><span class="icone-panier"><i class="fa-solid fa-cart-shopping" style="color: #28a745;"></i></span>(1)<span class="nombre-commande"></span></a></li>
-        </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../accueil/accueil.html">
+              <span class="icone-logo text-secondary element-menu"></span>
+              <span class="fs-4 text-secondary element-menu"><i class="fa-solid fa-code-branch"></i>&nbsp;Parlons Code</span>
+            </a>
+            <button class="navbar-toggler bg-body-tertiary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item ">
+                  <a class="nav-link text-secondary element-menu fs-5" href="../accueil/accueil.html#formation">Formations</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link text-secondary element-menu fs-5 text-secondary element-menu" href="../atelier/atelier.html">Ateliers</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link text-secondary element-menu fs-5" href="../podcast/podcast.html">Podcasts</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link text-secondary element-menu fs-5" href="../livres/livre.html">Livres</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link text-secondary element-menu fs-5" href="../pages-connexion/connexion.html">Se connecter</a>
+                </li>
+                <li class="nav-item ">
+                  <a href="../paniers/paniers.html" class="nav-link fs-5 text-success"><span class="icone-panier"><i class="fa-solid fa-cart-shopping" style="color: #28a745;"></i></span>(2)<span class="nombre-commande"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
     </header>
     <!-- Fin header  -->
 
@@ -33,221 +53,230 @@
     <main>
         <div class="container-reduction">
             <div class="titre-reduction text-center pt-5 border-bottom mb-5">
-                <h1 class="mt-5"><i class="fa-sharp fa-solid fa-cart-arrow-down"></i> <span class="reduction">Réductions</span></h1>
+                <h1 class="mt-3"><i class="fa-sharp fa-solid fa-cart-arrow-down"></i> <span class="reduction">Réductions</span></h1>
                 <p class="fs-5 text-secondary">Quelques rabais qui vous donnerons le sourire :)</p>
             </div>
     
-            <div class="reduction-principal">
-                <!-- Section Reductions combinées, Réductions académiques et Equipes  -->
-                <div class="section-reduction-left">
-                    <!-- Reduction académiques  -->
-                    <div class="card mb-3">
-                        <h5 class="card-header"><i class="fa-solid fa-cubes"></i> Réduction Combinées</h5>
-                        <div class="card-body">
-                            <!-- Description de la réduction  -->
-                            <p class="card-text mb-3 text-reduction fs-5">
-                                Si vous achetez plus d'une formation à la fois, 
-                                vous économiserez 20% sur la deuxième et la troisième formation. 
-                                Par exemple, si vous ajoutez la formation sur Python et celle sur Django à votre panier, 
-                                vous verrez le rabais combiné appliqué sur la deuxième formation.
-                            </p>
-    
-                            <!-- Le tableau de la réduction  -->
-                            <img src="https://parlonscode.com/images/combo-discount-demo.png" alt=""> 
+            <div class="reduction-principal"></div>
+            <div class="row">
+                <!-- Colonne avec taille 8  -->
+                <div class="col-md-8 mb-4">
+                    <!-- Section Reductions combinées, Réductions académiques et Equipes  -->
+                    <div class="section-reduction-left">
+                        <!-- Reduction académiques  -->
+                        <div class="card mb-3">
+                            <h5 class="card-header"><i class="fa-solid fa-cubes"></i> Réduction Combinées</h5>
+                            <div class="card-body">
+                                <!-- Description de la réduction  -->
+                                <p class="card-text mb-3 text-reduction fs-5">
+                                    Si vous achetez plus d'une formation à la fois, 
+                                    vous économiserez 20% sur la deuxième et la troisième formation. 
+                                    Par exemple, si vous ajoutez la formation sur Python et celle sur Django à votre panier, 
+                                    vous verrez le rabais combiné appliqué sur la deuxième formation.
+                                </p>
+        
+                                <!-- Le tableau de la réduction  -->
+                                <img src="https://parlonscode.com/images/combo-discount-demo.png" alt=""> 
+                            </div>
                         </div>
-                    </div>
-    
-    
-                    <div class="card mb-3">
-                        <h5 class="card-header"><i class="fa-solid fa-graduation-cap"></i> Réduction académiques</h5>
-                        <div class="card-body">
-                            <!-- Description de la réduction  -->
-                            <p class="card-text mb-3 text-reduction fs-5">
-                                Si vous êtes un élève/étudiant ou un enseignant, 
-                                nous vous offrons un rabais de 15%. <a href="#">Envoyez-nous tout simplement un courriel</a> et joignez-y une preuve d'inscription ou d'emploi universitaire.
-                            </p>
+        
+        
+                        <div class="card mb-3">
+                            <h5 class="card-header"><i class="fa-solid fa-graduation-cap"></i> Réduction académiques</h5>
+                            <div class="card-body">
+                                <!-- Description de la réduction  -->
+                                <p class="card-text mb-3 text-reduction fs-5">
+                                    Si vous êtes un élève/étudiant ou un enseignant, 
+                                    nous vous offrons un rabais de 15%. <a href="#">Envoyez-nous tout simplement un courriel</a> et joignez-y une preuve d'inscription ou d'emploi universitaire.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-    
-                    <div class="card mb-3">
-                        <h5 class="card-header"><i class="fa-solid fa-people-group"></i> Equipes</h5>
-                        <div class="card-body">
-                            <!-- Description de la réduction  -->
-                            <p class="card-text mb-3 text-reduction fs-5">
-                                Si vous avez une équipe de 5 personnes ou plus, nous offrons des licences d'équipe à des prix réduits:
-                            </p>
-                            
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                      <th scope="col" class="fs-5">#Nombre de personnes</th>
-                                      <th scope="col" class="fs-5">%Réduction</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td id="text" class="fs-5">5-10</td>
-                                      <td id="text" class="fs-5">10% de réduction</td>
-                                    </tr>
-                                    <tr>
-                                      <td id="text" class="fs-5">11-20</td>
-                                      <td id="text" class="fs-5">15% de réduction</td>
-                                    </tr>
-                                    <tr>
-                                      <td id="text" class="fs-5">21-30</td>
-                                      <td id="text" class="fs-5">25% de réduction</td>
-                                    </tr>
-                                    <tr>
-                                      <td id="text" class="fs-5">31+</td>
-                                      <td id="text" class="fs-5">Contactez-nous</td>
-                                    </tr>
-                                  </tbody>
-                            </table>
-                            
-                            <p class="card-text mb-3 text-reduction fs-5">
-                                <a href="#">Envoyez-nous un courrier électronique</a> avec le nombre de personnes que vous souhaitez inscrire et nous vous fournirons un code promo spécial pour votre équipe. Vous n'avez pas à acheter toutes les copies en une seule fois; Vous pouvez étaler les achats sur une période de 4 mois.
-                            </p>
-    
+        
+                        <div class="card mb-3">
+                            <h5 class="card-header"><i class="fa-solid fa-people-group"></i> Equipes</h5>
+                            <div class="card-body">
+                                <!-- Description de la réduction  -->
+                                <p class="card-text mb-3 text-reduction fs-5">
+                                    Si vous avez une équipe de 5 personnes ou plus, nous offrons des licences d'équipe à des prix réduits:
+                                </p>
+                                
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                          <th scope="col" class="fs-5">#Nombre de personnes</th>
+                                          <th scope="col" class="fs-5">%Réduction</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td id="text" class="fs-5">5-10</td>
+                                          <td id="text" class="fs-5">10% de réduction</td>
+                                        </tr>
+                                        <tr>
+                                          <td id="text" class="fs-5">11-20</td>
+                                          <td id="text" class="fs-5">15% de réduction</td>
+                                        </tr>
+                                        <tr>
+                                          <td id="text" class="fs-5">21-30</td>
+                                          <td id="text" class="fs-5">25% de réduction</td>
+                                        </tr>
+                                        <tr>
+                                          <td id="text" class="fs-5">31+</td>
+                                          <td id="text" class="fs-5">Contactez-nous</td>
+                                        </tr>
+                                      </tbody>
+                                </table>
+                                
+                                <p class="card-text mb-3 text-reduction fs-5">
+                                    <a href="#">Envoyez-nous un courrier électronique</a> avec le nombre de personnes que vous souhaitez inscrire et nous vous fournirons un code promo spécial pour votre équipe. Vous n'avez pas à acheter toutes les copies en une seule fois; Vous pouvez étaler les achats sur une période de 4 mois.
+                                </p>
+        
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- Fin Réductions académiques  -->
-    
-                <!-- section toutes nos formations et usage personnel  -->
-                <div class="section-reduction-right">
-                    <!-- Toutes nos formations  -->
-                    <div class="card mb-4">
-                        <h5 class="card-header">Toutes nos formations</h5>
-                        <div class="card-body">
-                            <!-- Cours 1  -->
-                            <p class="card-text d-flex">
-                                <a href="#"><img src="https://parlonscode.com/icons/courses/java-swing.svg" alt="icone-swing"></a>
-                                <a href="#" class="ms-2 fs-5">Devenez  Swage avec Swing</a>
-                            </p>
-    
-                            <!-- Cours 2  -->
-                            <p class="card-text d-flex">
-                                <a href="#"><img src="https://parlonscode.com/icons/courses/symfony-framework.svg" alt="icone-symfony"></a>
-                                <a href="#" class="ms-2 fs-5">Devenez un pro Symfony 3/4</a>
-                            </p>
-    
-                            <!-- Cours 3  -->
-                            <p class="card-text d-flex">
-                                <a href="#"><img src="https://parlonscode.com/icons/courses/symfony-framework.svg" alt="icone-symfony"></a>
-                                <a href="#" class="ms-2 fs-5">Symfony 4 en une semaine!</a>
-                            </p>
-    
-                            <!-- Cours 4  -->
-                            <p class="card-text d-flex">
-                                <a href="#"><img src="https://parlonscode.com/icons/courses/symfony-framework.svg" alt="icone-symfony"></a>
-                                <a href="#" class="ms-2 fs-5">Symfony 5 en une semaine!</a>
-                            </p>
-    
-                            <!-- Cours 5  -->
-                            <p class="card-text d-flex">
-                                <a href="#"><img src="https://parlonscode.com/icons/courses/python.svg" alt="icone-phyton"></a>
-                                <a href="#" class="ms-2 fs-5">MasterClass Pyton</a>
-                            </p>
-    
-                            <!-- Cours 6 -->
-                            <p class="card-text d-flex">
-                                <a href="#"><img src="https://parlonscode.com/icons/courses/symfony-framework.svg" alt="icone-symfony"></a>
-                                <a href="#" class="ms-2 fs-5">Devenez un pro Symfony</a>
-                            </p>
+                
+                <!-- Colonne avec taille 4  -->
+                <div class="col-md-4 mb-4">
+                    <!-- section toutes nos formations et usage personnel  -->
+                    <div class="section-reduction-right">
+                        <!-- Toutes nos formations  -->
+                        <div class="card mb-4">
+                            <h5 class="card-header">Toutes nos formations</h5>
+                            <div class="card-body">
+                                <!-- Cours 1  -->
+                                <p class="card-text d-flex">
+                                    <a href="#"><img src="https://parlonscode.com/icons/courses/java-swing.svg" alt="icone-swing"></a>
+                                    <a href="#" class="ms-2 fs-5">Devenez  Swage avec Swing</a>
+                                </p>
+        
+                                <!-- Cours 2  -->
+                                <p class="card-text d-flex">
+                                    <a href="#"><img src="https://parlonscode.com/icons/courses/symfony-framework.svg" alt="icone-symfony"></a>
+                                    <a href="#" class="ms-2 fs-5">Devenez un pro Symfony 3/4</a>
+                                </p>
+        
+                                <!-- Cours 3  -->
+                                <p class="card-text d-flex">
+                                    <a href="#"><img src="https://parlonscode.com/icons/courses/symfony-framework.svg" alt="icone-symfony"></a>
+                                    <a href="#" class="ms-2 fs-5">Symfony 4 en une semaine!</a>
+                                </p>
+        
+                                <!-- Cours 4  -->
+                                <p class="card-text d-flex">
+                                    <a href="#"><img src="https://parlonscode.com/icons/courses/symfony-framework.svg" alt="icone-symfony"></a>
+                                    <a href="#" class="ms-2 fs-5">Symfony 5 en une semaine!</a>
+                                </p>
+        
+                                <!-- Cours 5  -->
+                                <p class="card-text d-flex">
+                                    <a href="#"><img src="https://parlonscode.com/icons/courses/python.svg" alt="icone-phyton"></a>
+                                    <a href="#" class="ms-2 fs-5">MasterClass Pyton</a>
+                                </p>
+        
+                                <!-- Cours 6 -->
+                                <p class="card-text d-flex">
+                                    <a href="#"><img src="https://parlonscode.com/icons/courses/symfony-framework.svg" alt="icone-symfony"></a>
+                                    <a href="#" class="ms-2 fs-5">Devenez un pro Symfony</a>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Fin toutes nos formations  -->
-    
-                    <!-- Usage personnel  -->
-                    <div class="card">
-                        <h5 class="card-header"><i class="fa-solid fa-eye-slash fa-flip-horizontal"></i> Usage personnel</h5>
-                        <div class="card-body">
-                            <!-- Cours 1  -->
-                            <p class="card-text mb-3 text-usage-perso fs-5">
-                                Tout le matériel didactique, y compris les vidéos, 
-                                les exercices et le code source est protégé par le 
-                                droit d'auteur et est uniquement destiné à un usage individuel. 
-                                Chaque personne devra donc acheter sa propre copie. 
-                                Merci pour votre soutien.
-                            </p>
+                        <!-- Fin toutes nos formations  -->
+        
+                        <!-- Usage personnel  -->
+                        <div class="card">
+                            <h5 class="card-header"><i class="fa-solid fa-eye-slash fa-flip-horizontal"></i> Usage personnel</h5>
+                            <div class="card-body">
+                                <!-- Cours 1  -->
+                                <p class="card-text mb-3 text-usage-perso fs-5">
+                                    Tout le matériel didactique, y compris les vidéos, 
+                                    les exercices et le code source est protégé par le 
+                                    droit d'auteur et est uniquement destiné à un usage individuel. 
+                                    Chaque personne devra donc acheter sa propre copie. 
+                                    Merci pour votre soutien.
+                                </p>
+                            </div>
                         </div>
+                        <!-- Fin usage personnel  -->
+        
                     </div>
-                    <!-- Fin usage personnel  -->
-    
+
                 </div>
+
             </div>
+    
+            
         </div>
     </main>
     <!-- Fin main  -->
 
-        <!-- Debut footer  -->
-        <footer>
-            <!-- Parlons code, liens utils et autre  -->
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-3 px-5 my-3">
-                <div class="col-md-6">
-                    <h5>Parlons Code</h5>
-                    <p class="fs-5 text-secondary">Apprenez à programmer par la pratique!</p>
-                    <ul class="nav nav-pills">
-                        <li class="nav-item bg-secondary rounded-1 px-1"><a href="#" class="nav-link fs-5"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a></li>
-                        <li class="nav-item bg-secondary rounded-1 ms-2"><a href="#" class="nav-link fs-5"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
-                        <li class="nav-item bg-secondary rounded-1 ms-2"><a href="#" class="nav-link fs-5"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i> </a></li>
-                        <li class="nav-item bg-secondary rounded-1 ms-2"><a href="#" class="nav-link fs-5"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></li>
-                    </ul>
-                  
-                </div>
-            
-                <!-- <div class="col ">
-            
-                </div> -->
-            
-                
-            
-                <div class="col-md-3 ">
-                  <h5>Liens utils</h5>
-                  <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-5">Formations</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-5">Podcasts</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-5">Livres & Ebooks</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-5">Support Technique</a></li>
-                  </ul>
-                </div>
-            
-                <div class="col-md-3">
-                  <h5>Autres</h5>
-                  <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-5">A propos</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-5">Contact</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-5">Politique de confidentialité</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-5">Condition d'utilisation</a></li>
-                  </ul>
-                </div>
+    <!-- Debut footer  -->
+    <footer>
+        <!-- Parlons code, liens utils et autre  -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-3 px-5 my-3">
+            <div class="col-md-6">
+              <h5>Parlons Code</h5>
+              <p class="fs-5 text-secondary">Apprenez à programmer par la pratique!</p>
+                <ul class="nav nav-pills">
+                    <li class="nav-item bg-secondary rounded-1 px-1 mb-3"><a href="#" class="nav-link fs-5"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a></li>
+                    <li class="nav-item bg-secondary rounded-1 ms-2 mb-3"><a href="#" class="nav-link fs-5"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
+                    <li class="nav-item bg-secondary rounded-1 ms-2 mb-3"><a href="#" class="nav-link fs-5"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i> </a></li>
+                    <li class="nav-item bg-secondary rounded-1 ms-2 mb-3"><a href="#" class="nav-link fs-5"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-    
-            <hr>
-    
-            <!-- Newsletter  -->
-            <div class="px-5">
-                <p class="fs-4"><i class="fa-regular fa-bell" style="color: #000000;"></i> Recevez toute l'actualité du site dans votre boite mail!</p>
-                <form action="">
-                  <div class="row">
-                      <div class="col-6">
-                        <input type="email" class="form-control fs-5" placeholder="Veuillez  entrer votre adresse email" aria-label="First name">
-                      </div>
-                      <div class="col">
-                        <button type="button" class="btn btn-newsletter col-6 fs-5"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> S'abonner à la newsletter</button>
-                      </div>
-                  </div>           
-    
-                </form>
+              
+        
+            <div class="col-md-3 ">
+              <h5>Liens utils</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-3"><a href="#formation" class="nav-link p-0 text-secondary fs-5">Formations</a></li>
+                <li class="nav-item mb-3"><a href="../podcast/podcast.html" class="nav-link p-0 text-secondary fs-5">Podcasts</a></li>
+                <li class="nav-item mb-3"><a href="../livres/livre.html" class="nav-link p-0 text-secondary fs-5">Livres & Ebooks</a></li>
+                <li class="nav-item mb-3"><a href="../supportTechnique/support.html" class="nav-link p-0 text-secondary fs-5">Support Technique</a></li>
+              </ul>
             </div>
-            <!-- Fin newsletter -->
-    
-            <!-- Copyright -->
-            <div class="text-center mt-5">
-                <p class="fs-5 text-secondary">Conçu avec <i class="fa-solid fa-heart" style="color: #ffc0cb;"></i> et beaucoup de <i class="fa-solid fa-mug-saucer" style="color: #cccccc;"></i> sur Jupiter. © Copyright 2017-2023. Tous Droits Réservés.</p>  
+        
+            <div class="col-md-3">
+              <h5>Autres</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-3"><a href="../a_propos/propos.html" class="nav-link p-0 text-secondary fs-5">A propos</a></li>
+                <li class="nav-item mb-3"><a href="../popupcontact/popupcontact.html" class="nav-link p-0 text-secondary fs-5">Contact</a></li>
+                <li class="nav-item mb-3"><a href="../politiqueConf/politique.html" class="nav-link p-0 text-secondary fs-5">Politique de confidentialité</a></li>
+                <li class="nav-item mb-3"><a href="../conditionUtilasation/condition.html" class="nav-link p-0 text-secondary fs-5">Condition d'utilisation</a></li>
+              </ul>
             </div>
-            <!-- Copyright -->          
-        </footer>
+        </div>
+  
+        <hr>
+        
+        <!-- Newsletter  -->
+        <div class="px-5">
+            <p class="fs-4"><i class="fa-regular fa-bell" style="color: #000000;"></i> Recevez toute l'actualité du site dans votre boite mail!</p>
+            <form action="">
+              <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <input type="email" class="form-control fs-5" placeholder="Veuillez  entrer votre adresse email" aria-label="First name">
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <button type="button" class="btn btn-newsletter col-6 fs-5"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> S'abonner à la newsletter</button>
+                  </div>
+              </div>           
+              
+            </form>
+        </div>
+        <!-- Fin newsletter -->
+  
+        <!-- Copyright -->
+        <div class="text-center mt-5 mb-3">
+            <p class="fs-5 text-secondary">Conçu avec <i class="fa-solid fa-heart" style="color: #ffc0cb;"></i> et beaucoup de <i class="fa-solid fa-mug-saucer" style="color: #cccccc;"></i> sur Jupiter. © Copyright 2017-2023. Tous Droits Réservés.</p>  
+        </div>
+        <!-- Copyright -->          
+    </footer>
+    <!-- Fin footer  -->
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
 </body>
 </html>
