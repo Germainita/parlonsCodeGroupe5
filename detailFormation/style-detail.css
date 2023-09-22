@@ -1,0 +1,123 @@
+:root{
+    --couleurFond: #F9F9F9;
+    --couleurLien: #3F55AF;
+    --couleurLienHover: #32438A;
+    --couleurHeaderRight: #D9EDF7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-detail{
+    background-color: var(--couleurFond);
+    padding: 0 90px;
+}
+
+.titre-detail{
+    color: #28384D;
+}
+
+.titre-detail .detail{
+    font-size: 39px;
+}
+
+
+
+/* Partie detail left  */
+
+
+.section-detail-left img{
+    width: 100%;
+}
+
+.section-detail-left .card-header{
+    background-color: #3F55AF;
+    color: white;
+}
+
+.section-detail-left .card {
+    border: 1px solid #3F55AF;
+}
+
+.joindre-autre{
+    background-color: var(--couleurFond);
+    padding: 2vh;
+    
+}
+
+.icone-joindre{
+    padding: 2vh 2vh;
+    border-radius: 100%;
+}
+
+.btn-panier{
+    background-color: #3F55AF;
+    color: white;
+}
+
+.btn-panier:hover{
+    background-color: #32438A;
+    color: white;
+}
+
+
+/* Fin detail left  */
+
+
+/* Section .detail right  */
+
+.section-detail-right .card{
+    border: 1px solid var(--couleurHeaderRight);
+}
+
+.section-detail-right .card .card-header {
+    background-color: var(--couleurHeaderRight);
+    color: #3170AA;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Formateur  */
+.formateur img{
+    width: 12vh;
+    height: 12vh;
+}
+
+/* Toutes nos formations */
+.section-detail-right .formation img {
+    width: 30px;
+    height: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--couleurLien);
+}
+
+a:hover{
+    text-decoration: underline var(--couleurLienHover);
+    color: var(--couleurLienHover);
+}
+
+/* Fin toutes nos formations */
+
+p, #text {
+    color: #515753;
+
+}
+
+/* Fin usage personnel */
+
+.temoignages button {
+    border: 1px solid #3F55AF;
+    background-color: white;
+    color: #428bca;
+}
+
+.temoignages button:hover{
+    background-color: #32438A;
+    color: white;
+}
